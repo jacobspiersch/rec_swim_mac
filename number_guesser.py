@@ -28,7 +28,7 @@ def you_guess(x):
     print(f'Yay! I am a good computer! I guessed the number correctly!!')
 
 
-you_guess(20)
+you_guess(1000)
 
 
 
