@@ -13,4 +13,23 @@ def guess(x):
     print(f"Yup. The number was {random_number}")
 
 
-guess(10)
+def you_guess(x):
+    low = 1
+    high = x
+    feedback = ''
+    print('Think of a number and I will guess it ')
+    while feedback != 'c':
+        guess = random.randint(low, high)
+        feedback = input(f'Is {guess} too high (H), too low (L), or correct (C)? ').lower()
+        if feedback == 'h':
+            high = guess - 1
+        elif feedback == 'l':
+            low = guess + 1
+    print(f'Yay! I am a good computer! I guessed the number correctly!!')
+
+
+you_guess(20)
+
+
+
+
